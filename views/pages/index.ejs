@@ -1,7 +1,39 @@
 <%- include("../partials/header.ejs") %>
 
-<h1>HELLLO !!!!</h1>
+<header>
+    <div class="indicator__track">
+        <div class="indicator__bar" id="indicator"></div>
+    </div>
+</header>
 
-<p>I hate you</p>
+<main>
+    <section>
+        <div class="twoBox">
+            <div class="box">
+                <p>
+                    J'ai récemment obtenu un diplôme d'études secondaires spécialisé dans le commerce et l'administration et je suis impatient de commencer ma carrière dans le secteur bancaire. Je n'ai peut-être pas d'expérience bancaire directe, mais j'apprends vite, je suis très motivé et je suis prêt à faire la différence chez Spuerkeess.
+                </p>
+    
+            </div>
+    
+            <div class="box">
+                <img src="assets/img/luxembourg-bcee.png" alt="">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="navBtn-container">
+        <div class="navBtn">
+            <a href="/"></a>
+        </div>
+
+        <div class="navBtn">
+            <a href="<%= path %>/pages/parcours.ejs">Next</a>
+        </div>
+    </div>
+
+</footer>
 
 <%- include("../partials/footer.ejs") %>

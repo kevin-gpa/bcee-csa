@@ -17,9 +17,22 @@ app.set("view engine", "ejs");
 /**Routes */
 
 app.get("/", (req, res) => {
-    res.render("pages/index");
+    res.render("pages/index", {
+        path: __dirname,
+    });
 });
 
+app.get("/parcours", (req, res) => {
+    res.render("pages/parcours");
+});
+
+app.get("/quotidien", (req, res) => {
+    res.render("pages/quotidien");
+});
+
+app.get("/conclusion", (req, res) => {
+    res.render("pages/conclusion");
+});
 
 /**Server */
 

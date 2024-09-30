@@ -16,7 +16,7 @@ app.set("view engine", "ejs");
 /**Routes */
 
 app.get("/", (req, res) => {
-    res.render("pages/index.ejs");
+    res.render("/pages/index.ejs");
 });
 
 

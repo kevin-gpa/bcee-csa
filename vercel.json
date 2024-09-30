@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "name": "bcee-csa",
   "builds": [
-    {
-      "src": "app.js",
-      "dest": ".",
-      "framework": "node"
-    }
+    { "src": "app.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/app.js" }
   ]
 }

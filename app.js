@@ -18,7 +18,7 @@ app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
     res.render("pages/index", {
-        path: __dirname,
+        path: __filename,
     });
 });
 
